@@ -1,5 +1,7 @@
 # COVID-19 Response Network
 
+[![GitHub license](https://img.shields.io/github/license/Vertical-OSS/covid-response-network)](https://github.com/Vertical-OSS/covid-response-network/blob/master/LICENSE)[![GitHub issues](https://img.shields.io/github/issues/Vertical-OSS/covid-response-network)](https://github.com/Vertical-OSS/covid-response-network/issues)
+
 ## OVERVIEW
 
 In a nutshell, the COVID-19 Response Network is a system to help fulfill the needs of communities during the pandemic.   
@@ -24,9 +26,9 @@ Some experienced eyes will be needed, so experienced Umbraco MVPs will be requir
 
 The project needs to be able to quickly be cloned and set up by local developers, with a focus on making sure our coding doesn’t conflict with one another's.  With it, we need to set up a proper Continuous Integration/Continuous Deployment pipeline in Azure to deploy these sites, and to update them as changes to the overall software happen. 
 
-### MILESTONES
+### HIGH-LEVEL MILESTONES
 
-1. Properly source-control this project and include CI/CD Pipelines
+1. Properly source-control this project and add Azure Pipelines
 2. Create a new [Bootstrap](https://getbootstrap.com/) based template (our current one cannot be redistributed)
 3. "Coming Soon" Page  
 4. Master Layout 
@@ -39,3 +41,24 @@ The project needs to be able to quickly be cloned and set up by local developers
 11. Membership Portal / Timebank
 12. Consumable API
 13. Umbraco "CRN Starter Kit" / Packages
+
+
+
+## TEAM
+
+| Contributor      | Role                                 |
+| ---------------- | ------------------------------------ |
+| Berin Iwlew      | Project Lead                         |
+| Adam Brooks      | Project Manager                      |
+| Johannes Dumitru | DevOps, Architect                    |
+| Alex Vanino      | InfoSec, Public Safety, CheckUpOn.Me |
+| Chris Randle     | Umbraco MVP                          |
+| Shadi Shawki     | .NET Developer                       |
+| John Wang        | .NET Developer                       |
+| Paul Ayre        | Resident Australian                  |
+
+
+
+### Special thanks to
+
+- [Stephen Scapelliti](https://www.linkedin.com/in/stephen-scapelliti/) of the Progressive Coders Network for helping advise on different legal and organizational processes.
