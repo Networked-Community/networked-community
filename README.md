@@ -1,6 +1,6 @@
 # COVID-19 Response Network
 
-## Overview
+## OVERVIEW
 
 In a nutshell, the COVID-19 Response Network is a system to help fulfill the needs of communities during the pandemic.   
 
@@ -16,5 +16,26 @@ Simple, we didn’t reinvent the wheel.  We used [Umbraco](https://umbraco.com/)
 
 Since each community will have their own set of needs and resources, we wanted something simple enough to train community organizers on how to update the content themselves.
 
+## WHAT'S NEXT
 
+The current prototype needs to be rebuilt as a solution in a version-controlled environment.   
 
+Some experienced eyes will be needed, so experienced Umbraco MVPs will be required to help us with the finer details of working with Umbraco in an Agile team environment. 
+
+The project needs to be able to quickly be cloned and set up by local developers, with a focus on making sure our coding doesn’t conflict with one another's.  With it, we need to set up a proper Continuous Integration/Continuous Deployment pipeline in Azure to deploy these sites, and to update them as changes to the overall software happen. 
+
+### MILESTONES
+
+1. Properly source-control this project and include CI/CD Pipelines
+2. Create a new [Bootstrap](https://getbootstrap.com/) based template (our current one cannot be redistributed)
+3. "Coming Soon" Page  
+4. Master Layout 
+5. Home Page
+6. Contact Page
+7. Offer Help Section
+8. Request Help Section
+9. Community Resource Guide
+10. Local Business Directory
+11. Membership Portal / Timebank
+12. Consumable API
+13. Umbraco "CRN Starter Kit" / Packages
