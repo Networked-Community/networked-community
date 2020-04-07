@@ -1,6 +1,7 @@
 # COVID-19 Response Network
 
-[![GitHub license](https://img.shields.io/github/license/Vertical-OSS/covid-response-network)](https://github.com/Vertical-OSS/covid-response-network/blob/master/LICENSE)[![GitHub issues](https://img.shields.io/github/issues/Vertical-OSS/covid-response-network)](https://github.com/Vertical-OSS/covid-response-network/issues)
+[![GitHub license](https://img.shields.io/github/license/Vertical-OSS/covid-response-network)](https://github.com/Vertical-OSS/covid-response-network/blob/master/LICENSE) [![PRs welcome!](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](./CODE_OF_CONDUCT.md)
+
 
 ## OVERVIEW
 
