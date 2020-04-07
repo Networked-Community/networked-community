@@ -61,4 +61,4 @@ The project needs to be able to quickly be cloned and set up by local developers
 
 ### Special thanks to
 
-- [Stephen Scapelliti](https://www.linkedin.com/in/stephen-scapelliti/) of the Progressive Coders Network for helping advise on different legal and organizational processes.
+- [Stephen Scapelliti](https://www.linkedin.com/in/stephen-scapelliti/) of the [Progressive Coders Network](https://progcode.org/) for helping advise on different legal and organizational processes.
