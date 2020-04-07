@@ -378,3 +378,8 @@ healthchecksdb
 /src/Crn/Crn.Web/App_Plugins/FaIconpicker
 /src/Crn/Crn.Web/App_Plugins/RobotsTxtEditor
 /src/crn/Crn.Cms/Umbraco
+
+# AspnetBoilerplate related ignores.
+/src/Crn.Web.Host/App_Data/Logs/
+/src/Crn.Web.Mvc/App_Data/Logs/
+/src/Crn.Migrator/Logs/Logs.txt
