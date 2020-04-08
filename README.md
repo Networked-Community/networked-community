@@ -5,9 +5,9 @@
 
 ## OVERVIEW
 
-Originally coined the "COVID-19 Response Network", Networked.Community is a system to help fulfill the needs of communities, the people, and the organizations within them.   
+Originally coined the "COVID-19 Response Network" and born out of the need to respond to the pandemic, Networked.Community is a system to help fulfill the needs of communities, the organizations, and the ultimately the people within them.   
 
-The project was originally inspired by Jae Slaby, a local community organizer in Battle Creek, Michigan that put together a local website that linked to a resource guide and timebank on Google Sheets to help people to seek and offer help, with the goal of connecting people together. Putting this together on to a simple to use website looked to be the solution to this, to keep things user friendly and highly accessible.
+The project was originally inspired by Jae Slaby, a local community organizer in Battle Creek, Michigan that put together a local website that linked to a resource guide and timebank on Google Sheets to help people to seek and offer help, with the goal of connecting people together. Putting this together on to a simple to use website looked to be the solution to this, to keep things user friendly, highly accessible, and localized to multiple languages.
 
 ## WHAT IT DOES (so far)
 
