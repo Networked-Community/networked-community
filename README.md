@@ -27,7 +27,7 @@ Some experienced eyes will be needed, so experienced Umbraco MVPs will be requir
 
 User interfaces will need to be created and a mature application framework will need to be used to handle global data, such as memberships, organizations, resources, and the ever expanding needs of the communities.   All of this will need to be available by a consumable API, not only for the UIs, but for other external services.
 
-Along [Umabraco](https://umbraco.com/) as the CMS, we will be using [ASP.NET Boilerplate](https://github.com/aspnetboilerplate/aspnetboilerplate), a general purpose application framework especially designed for modern web applications.  It uses already familiar tools, implements the best practices around them to provide a SOLID development experience, and is [highly documented](https://aspnetboilerplate.com/Pages/Documents).  The solution built using it will use the [.Net Core](https://github.com/dotnet/core) Framework.  [React](https://reactjs.org/) will be used for building additional user interfaces, and be built off of a customized version of Admin LTE.   
+Along [Umbraco](https://umbraco.com/) as the CMS, we will be using [ASP.NET Boilerplate](https://github.com/aspnetboilerplate/aspnetboilerplate), a general purpose application framework especially designed for modern web applications.  It uses already familiar tools, implements the best practices around them to provide a SOLID development experience, and is [highly documented](https://aspnetboilerplate.com/Pages/Documents).  The solution built using it will use the [.Net Core](https://github.com/dotnet/core) Framework.  [React](https://reactjs.org/) will be used for building additional user interfaces.   
 
 ## WHERE WE ARE AT
 
