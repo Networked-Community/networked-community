@@ -2,7 +2,7 @@
 
 First off, thank you for considering contributing to this project. Whether you're interested in contributing code, or contributing in some other manner, we're happy to have you on board!
 
-This document describes how to contribute the software aspects of our project, if you want to contribute by other means, please see our [Getting Involved / Onboarding](https://github.com/Networked-Community/networked-community/blob/master/docs/GETTING_INVOLVED.md) document.
+This document describes how to contribute the software aspects of our project, if you want to contribute by other means, please see our [Getting Involved / Onboarding](https://github.com/Networked-Community/networked-community/blob/master/docs/en/GETTING_INVOLVED.md) document.
 
 ## 
 
@@ -18,7 +18,7 @@ Following these guidelines helps to communicate that you respect the time of the
 
 Lots of people are working on this project at the same time, so we try our best to explicitly assign tasks to individuals to reduce the likelihood of duplicated or wasted effort.
 
-Before we can assign any tasks to you, we ask that you read and complete the process detailed in our [Getting Involved / Onboarding](https://github.com/Networked-Community/networked-community/blob/master/docs/GETTING_INVOLVED.md)  document, and in particular **Join a Team** if possible.
+Before we can assign any tasks to you, we ask that you read and complete the process detailed in our [Getting Involved / Onboarding](https://github.com/Networked-Community/networked-community/blob/master/docs/en/GETTING_INVOLVED.md)  document, and in particular **Join a Team** if possible.
 
 Once you have done this, we will start being able to assign issues to you. You may take a look at the open issues, in particular, those labelled [good first issue](https://github.com/Networked-Community/networked-community/labels/good%20first%20issue) or [help wanted](https://github.com/Networked-Community/networked-community/labels/help%20wanted).
 
