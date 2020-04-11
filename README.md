@@ -1,6 +1,6 @@
 # Networked.Community
 
-[![GitHub license](https://img.shields.io/github/license/Vertical-OSS/covid-response-network)](https://github.com/Vertical-OSS/covid-response-network/blob/master/LICENSE) [![PRs welcome!](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](./CODE_OF_CONDUCT.md)
+[![GitHub license](https://img.shields.io/github/license/Vertical-OSS/covid-response-network)](https://github.com/Vertical-OSS/covid-response-network/blob/master/LICENSE) [![PRs welcome!](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](./CODE_OF_CONDUCT.md) ![Patreon](https://img.shields.io/endpoint?label=Patreon&url=https%3A%2F%2Fshieldsio-patreon.herokuapp.com%2Fnetworkedcommunity&link=https://www.patreon.com/networkedcommunity)
 
 
 ## OVERVIEW
