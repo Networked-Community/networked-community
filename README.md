@@ -47,7 +47,7 @@ To volunteer, send an email to [join@networked.community](mailto:join@networked.
 
 ## WHERE WE ARE AT
 
-For more information of what we're up to currently, check out the [Main Project Board](https://github.com/orgs/Vertical-OSS/projects/1).
+For more information of what we're up to currently, check out the [Main Project Board](https://github.com/orgs/networked-community/projects/1).
 
 ### Special thanks to
 
