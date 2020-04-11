@@ -31,6 +31,8 @@ Along [Umbraco](https://umbraco.com/) as the CMS, we will be using [ASP.NET Boil
 
 ## WHERE WE ARE AT
 
+This is a marathon, not a sprint.
+
 For more information of what we're up to currently, check out the [Main Project Board](https://github.com/orgs/Vertical-OSS/projects/1).
 
 ### Special thanks to
