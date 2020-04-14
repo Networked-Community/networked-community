@@ -1,4 +1,4 @@
-# Contributing Code to COVID-19 Response Network
+# Contributing Code to Networked.Community
 
 First off, thank you for considering contributing to this project. Whether you're interested in contributing code, or contributing in some other manner, we're happy to have you on board!
 
@@ -94,10 +94,10 @@ Your contribution will have to be Approved by a member of the Organization befor
 
 ### Commit message conventions.
 
-We follow the conventional commits guidelines. Check [here](https://www.conventionalcommits.org/en/v1.0.0/)
+We follow the conventional commits guidelines. [Check here](https://www.conventionalcommits.org)
 
 # 
 
 # PULL Requests
 
-Opening pull requests should be done with enough information and  screenshots for visual changes to facilitate the reviewers job. Its  MANDATORY to add a link to the issue related
+Opening pull requests should be done with enough information and  screenshots for visual changes to facilitate the reviewers job. Its  MANDATORY to add a link to the related issue.
