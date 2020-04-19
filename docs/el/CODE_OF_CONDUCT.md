@@ -1,4 +1,3 @@
-```
 # Κώδικας δεοντολογίας «Contributor Covenant»
 
 ## Η υπόσχεσή μας
@@ -73,4 +72,3 @@
 <https://www.contributor-covenant.org/el/version/1/4/code-of-conduct.html>.
 
 [οικοσελίδα]: https://www.contributor-covenant.org
-```

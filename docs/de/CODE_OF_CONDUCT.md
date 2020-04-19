@@ -1,4 +1,4 @@
-```
+
 # Vereinbarung über Verhaltenskodex für Mitwirkende
 
 ## Unsere Verpflichtung
@@ -42,4 +42,3 @@ Projektverantwortliche, welche den Verhaltenskodex nicht befolgen, oder nicht na
 ## Bezug
 
 Dieser Verhaltenskodex basiert auf dem Contributor Covenant, Version 1.4, verfügbar unter https://www.contributor-covenant.org/de/version/1/4/code-of-conduct.html
-```
