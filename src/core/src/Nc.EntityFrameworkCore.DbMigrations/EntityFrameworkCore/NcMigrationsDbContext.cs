@@ -8,7 +8,6 @@ using Volo.Abp.Identity.EntityFrameworkCore;
 using Volo.Abp.IdentityServer.EntityFrameworkCore;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
-using Volo.Abp.TenantManagement.EntityFrameworkCore;
 
 namespace Nc.EntityFrameworkCore
 {
@@ -38,7 +37,6 @@ namespace Nc.EntityFrameworkCore
             builder.ConfigureIdentity();
             builder.ConfigureIdentityServer();
             builder.ConfigureFeatureManagement();
-            builder.ConfigureTenantManagement();
 
             /* Configure your own tables/entities inside the ConfigureNc method */
 

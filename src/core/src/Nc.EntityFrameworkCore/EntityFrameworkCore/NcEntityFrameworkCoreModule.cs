@@ -9,7 +9,6 @@ using Volo.Abp.IdentityServer.EntityFrameworkCore;
 using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
-using Volo.Abp.TenantManagement.EntityFrameworkCore;
 
 namespace Nc.EntityFrameworkCore
 {
@@ -22,7 +21,6 @@ namespace Nc.EntityFrameworkCore
         typeof(AbpEntityFrameworkCoreSqlServerModule),
         typeof(AbpBackgroundJobsEntityFrameworkCoreModule),
         typeof(AbpAuditLoggingEntityFrameworkCoreModule),
-        typeof(AbpTenantManagementEntityFrameworkCoreModule),
         typeof(AbpFeatureManagementEntityFrameworkCoreModule)
         )]
     public class NcEntityFrameworkCoreModule : AbpModule

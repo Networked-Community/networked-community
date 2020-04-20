@@ -13,7 +13,6 @@ using StackExchange.Redis;
 using Microsoft.OpenApi.Models;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
-using Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy;
 using Volo.Abp.AspNetCore.Serilog;
 using Volo.Abp.Autofac;
 using Volo.Abp.Caching;
@@ -26,7 +25,6 @@ namespace Nc
     [DependsOn(
         typeof(NcHttpApiModule),
         typeof(AbpAutofacModule),
-        typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
         typeof(NcApplicationModule),
         typeof(NcEntityFrameworkCoreDbMigrationsModule),
         typeof(AbpAspNetCoreSerilogModule)

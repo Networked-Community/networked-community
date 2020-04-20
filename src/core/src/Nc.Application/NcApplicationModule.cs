@@ -4,7 +4,6 @@ using Volo.Abp.FeatureManagement;
 using Volo.Abp.Identity;
 using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement;
-using Volo.Abp.TenantManagement;
 
 namespace Nc
 {
@@ -14,7 +13,6 @@ namespace Nc
         typeof(NcApplicationContractsModule),
         typeof(AbpIdentityApplicationModule),
         typeof(AbpPermissionManagementApplicationModule),
-        typeof(AbpTenantManagementApplicationModule),
         typeof(AbpFeatureManagementApplicationModule)
         )]
     public class NcApplicationModule : AbpModule
