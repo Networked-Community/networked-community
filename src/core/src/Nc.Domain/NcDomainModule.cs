@@ -1,5 +1,4 @@
-﻿using Nc.MultiTenancy;
-using Nc.ObjectExtending;
+﻿using Nc.ObjectExtending;
 using Volo.Abp.AuditLogging;
 using Volo.Abp.BackgroundJobs;
 using Volo.Abp.FeatureManagement;
@@ -35,10 +34,7 @@ namespace Nc
 
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
-            Configure<AbpMultiTenancyOptions>(options =>
-            {
-                options.IsEnabled = MultiTenancyConsts.IsEnabled;
-            });
+            
         }
     }
 }
