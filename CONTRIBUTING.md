@@ -2,7 +2,7 @@
 
 First off, thank you for considering contributing to this project. Whether you're interested in contributing code, or contributing in some other manner, we're happy to have you on board!
 
-This document describes how to contribute the software aspects of our project, if you want to contribute, please fill out our [volunteer intake form](https://thecure.to/Selfishness).
+This document describes how to contribute the software aspects of our project, if you want to contribute to it and in other non-technical ways, please fill out our [volunteer intake form](https://thecure.to/Selfishness).
 
 ## Please read our guidelines before you start.
 
