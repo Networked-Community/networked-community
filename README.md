@@ -43,11 +43,15 @@ The most significant challenge at this time is finding volunteers with the avail
 
 As we are in our new and immature state, we need people capable of navigating uncertainty and helping to define and build the future. Right now, we are mostly a blank canvas with a noble goal. As visibility to our mission and vision spreads, we will increase the variety and ease of which volunteers may become involved.
 
-To volunteer, send an email to [join@networked.community](mailto:join@networked.community)
+To volunteer, [please fill out our intake form](https://thecure.to/Selfishness).
 
 ## WHERE WE ARE AT
 
 For more information of what we're up to currently, check out the [Main Project Board](https://github.com/orgs/networked-community/projects/1).
+
+## HOW TO CONTRIBUTE
+
+To get started, please read the [Contributing](https://github.com/Networked-Community/networked-community/blob/master/CONTRIBUTING.md) document. (Work in progress)
 
 ### Special thanks to
 
