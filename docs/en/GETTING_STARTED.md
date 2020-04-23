@@ -62,7 +62,7 @@ docker pull redis
 Then, setup and run Redis in Docker via the CLI:
 
 ~~~~
-docker run -p 6379:6379 –-name nc-redis -d redis
+docker run -p 127.0.0.1:6379:6379 –-name nc-redis -d redis
 ~~~~
 
 > Note that the name should be **nc-redis**
