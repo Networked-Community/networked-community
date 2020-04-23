@@ -10,12 +10,12 @@ First things first! Let's setup our development environment before contributing 
 
 The following tools should be installed on your development machine:
 
-- [An OS that supports .NET Core 3.1](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md)
+- [An OS that supports .NET Core 3.1](https://github.com/dotnet/core/blob/master/release-notes/3.1/3.1-supported-os.md) 
 - **Code Editor**
   - [Visual Studio 2019 (v16.4+) for Windows](https://visualstudio.microsoft.com/vs/)
   - [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
   - [VSCode](https://code.visualstudio.com/) 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+- [.NET Core 3.1 SDK](https://docs.microsoft.com/en-us/dotnet/core/install/sdk)
 - [Node v12+](https://nodejs.org)
 - [Yarn v1.19+](https://classic.yarnpkg.com/)
 
@@ -84,13 +84,23 @@ The source code for Networked.Community is located in a [repository](https://git
 ### Prepare the solution (Visual Studio)
 
 1. Open the Nc.sln file in Visual Studio.  
-2. Rebuild the solution. 
-3. Right-Click on the Nc.DbMigrator project > Debug > New Instance
+2. Make sure the NuGet Packager Manager is set for the Nc.Cms.Web Project
+   We're using a release candidate for OrchardCMS, so we need to point the packages to the right place.
+   1. Open NuGet Package Manager
+   2. Package Source: nuget.org
+   3. Click the Setting gear
+   4. Under NuGet Package Manger > Package Sources
+      1. Add a package source
+      2. Name: Orchard CMS
+      3. Source: https://www.myget.org/F/orchardcore-preview/api/v3/index.json
+      4. Make sure 1.0.0-rc1-12867 of OrchardCore.Application.Cms.Targets is installed. 
+3. Rebuild the solution. 
+4. Right-Click on the Nc.DbMigrator project > Debug > New Instance
    This will prepare the local database and seed it with data.  
    When complete, press enter to close the window.
-4. Right-Click the Nc.IdentityServer project >  Set as startup project
+5. Right-Click the Nc.IdentityServer project >  Set as startup project
    1. Press CTRL-F5 to run it
-5. Right Click on the Nc.HttpApi.Host project > Set as startup project
+6. Right Click on the Nc.HttpApi.Host project > Set as startup project
    1. Press CTRL-F5 to run it
 
 You should now have two projects running - the Identity Server as well as the API Host with Swagger integration. 
