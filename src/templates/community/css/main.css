@@ -3,8 +3,10 @@
   }
 
   .masthead.segment {
-    min-height: 700px;
+    min-height: 500px;
     padding: 1em 0em;
+    background:url('/assets//images/bg3.jpg') no-repeat;
+    background-size:cover;
   }
   .masthead .logo.item img {
     margin-right: 1em;
@@ -75,6 +77,7 @@
     .masthead h1.ui.header {
       font-size: 2em;
       margin-top: 1.5em;
+      color: white;
     }
     .masthead h2 {
       margin-top: 0.5em;

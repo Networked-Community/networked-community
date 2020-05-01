@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="/components/calendar.css">
     <link rel="stylesheet" type="text/css" href="/components/popup.css">
     <link rel="stylesheet" type="text/css" href="/components/transition.css">
+    <link rel="stylesheet" type="text/css" href="/components/checkbox.css">
     <link rel="stylesheet" type="text/css" href="/css/main2.css">
 
     <script>
@@ -49,7 +50,7 @@
                                     }
                                 ]
                             },
-                            lasLname: {
+                            lastName: {
                                 identifier: 'last-name',
                                 rules: [
                                     {
@@ -84,7 +85,17 @@
                                         prompt: 'Please provide the reason why you are requesting help'
                                     }
                                 ]
+                            },
+                            agreeToBeContacted: {
+                                identifier: 'agree-to-be-contacted',
+                                rules: [
+                                    {
+                                        type: 'checkbox',
+                                        prompt: 'Please consent to being contacted'
+                                    }
+                                ]
                             }
+                            
                         }
                     })
                     ;
@@ -243,8 +254,8 @@
             </div>
             
             <div class="required field">
-                <div class="ui checkbox">
-                    <input type="checkbox" tabindex="0" class="hidden">
+                <div class="ui checkbox" data-children-count="1">
+                    <input type="checkbox" name="agree-to-be-contacted">
                     <label>I agree to be contacted by a Networked.Community Volunteer</label>
                 </div>
             </div>
