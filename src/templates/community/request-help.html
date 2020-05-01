@@ -9,97 +9,40 @@
 
     <!-- Site Properties -->
     <title>Battle Creek, Michigan - Networked.Community</title>
-    <link rel="stylesheet" type="text/css" href="/components/reset.css">
-    <link rel="stylesheet" type="text/css" href="/components/site.css">
 
-    <link rel="stylesheet" type="text/css" href="/components/container.css">
-    <link rel="stylesheet" type="text/css" href="/components/grid.css">
-    <link rel="stylesheet" type="text/css" href="/components/header.css">
-    <link rel="stylesheet" type="text/css" href="/components/image.css">
-    <link rel="stylesheet" type="text/css" href="/components/menu.css">
-    <link rel="stylesheet" type="text/css" href="/components/card.css">
-
-    <link rel="stylesheet" type="text/css" href="/components/divider.css">
-    <link rel="stylesheet" type="text/css" href="/components/dropdown.css">
-    <link rel="stylesheet" type="text/css" href="/components/segment.css">
-    <link rel="stylesheet" type="text/css" href="/components/button.css">
-    <link rel="stylesheet" type="text/css" href="/components/list.css">
-    <link rel="stylesheet" type="text/css" href="/components/icon.css">
-    <link rel="stylesheet" type="text/css" href="/components/sidebar.css">
-    <link rel="stylesheet" type="text/css" href="/components/transition.css">
-    <link rel="stylesheet" type="text/css" href="/components/emoji.css">
-    <link rel="stylesheet" type="text/css" href="/components/item.css">
-
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
 
     <script src="/assets/library/jquery.min.js"></script>
+    <script src="/scripts/semantic.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" class="ui" href="/css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="/components/emoji.css">
+    <link rel="stylesheet" type="text/css" href="/components/icon.css">
+    <link rel="stylesheet" type="text/css" href="/css/main2.css">
 
     <script>
         $(document)
             .ready(function () {
 
-                // fix menu when passed
-                $('.masthead')
-                    .visibility({
-                        once: false,
-                        onBottomPassed: function () {
-                            $('.fixed.menu').transition('fade in');
-                        },
-                        onBottomPassedReverse: function () {
-                            $('.fixed.menu').transition('fade out');
-                        }
-                    })
-                    ;
-
                 // create sidebar and attach to menu open
                 $('.ui.sidebar')
-                    .sidebar('attach events', '.toc.item')
-                    ;
+                    .sidebar('attach events', '.big.launch');
 
-            })
-            ;
+                $('.ui.sticky')
+                    .sticky({ context: '#help-rail' });
+
+            });
     </script>
 </head>
 
-<body>
-
-    <!-- Following Menu -->
-    <div class="ui large top fixed hidden menu">
-        <div class="ui container">
-            <a class="active item"><i class="home icon"></i> Home</a>
-            <a class="item" href="request-help.html"><i class="warning icon"></i> Request Help</a>
-            <a class="item"><i class="heart icon"></i> Offer Help</a>
-            <div class="ui simple dropdown item">
-                <i class="box icon"></i> Resource Guide
-                <i class="dropdown icon"></i>
-                <div class="menu">
-                    <div class="item"><em data-emoji=":mask:"></em> COVID-19</div>
-                    <div class="item"><em data-emoji=":woman_health_worker_tone3:"></em> Health and Medical</div>
-                    <div class="item"><em data-emoji=":brain:"></em> Mental Health</div>
-                    <div class="item"><em data-emoji=":bread:"></em> Food</div>
-                    <div class="item"><em data-emoji=":roll_of_paper:"></em> Necessities</div>
-                    <div class="item"><em data-emoji=":homes:"></em> Housing and Shelter</div>
-                    <div class="item"><em data-emoji=":construction_worker_tone3:"></em> Income and Employment</div>
-                    <div class="item"><em data-emoji=":military_medal:"></em> Service Members and Veterans</div>
-                    <div class="item"><em data-emoji=":warning:"></em> Crisis and Emergency</div>
-                    <div class="item"><em data-emoji=":older_man:"></em> Aging and Senior Services</div>
-                    <div class="item"><em data-emoji=":family_mwgb:"></em> Children and Families</div>
-                    <div class="item"><em data-emoji=":books:"></em> Education</div>
-                    <div class="item"><em data-emoji=":scales:"></em> Legal Services</div>
-                    <div class="item"><em data-emoji=":bus:"></em> Transporation</div>
-                    <div class="item"><em data-emoji=":octagonal_sign:"></em> Addictions</div>
-                    <div class="item"><em data-emoji=":wheelchair:"></em> Disability Services</div>
-                </div>
-            </div>
-        </div>
-    </div>
+<body class="basic minimal" ontouchstart="">
 
     <!-- Sidebar Menu -->
-    <div class="ui vertical inverted sidebar menu">
-        <a class="active item"><i class="home icon"></i> Home</a>
-        <a class="item" href="request-help.html"><i class="warning icon"></i> Request Help</a>
-        <a class="item"><i class="heart icon"></i> Offer Help</a>
-        <div class="item"><i class="box icon"></i> Resource Guide
+    <div class="ui vertical inverted sidebar menu" id="toc">
+        <a class="item" href="/index.html"><i class="home icon"></i> Home</a>
+        <a class="active item"><i class="warning icon"></i> Request Help</a>
+        <a class="item" href="/offer-help.html"><i class="heart icon"></i> Offer Help</a>
+        <div class="item"><i class="box icon"></i><a href="/resource-guide.html"> Resource Guide</a>
             <div class="menu">
                 <div class="item"><em data-emoji=":mask:"></em> COVID-19</div>
                 <div class="item"><em data-emoji=":woman_health_worker_tone3:"></em> Health and Medical</div>
@@ -121,82 +64,80 @@
         </div>
     </div>
 
+    <div class="ui black big launch right attached fixed button">
+        <i class="content icon"></i>
+        <span class="text">Menu</span>
+    </div>
+
     <!-- Page Contents -->
     <div class="pusher">
-        <div class="ui inverted center aligned segment">
-            <div class="ui container">
-                <div class="ui large secondary inverted pointing menu">
-                    <a class="toc item">
-                        <i class="sidebar icon"></i>
-                    </a>
-                    <a class="active item"><i class="home icon"></i>Home</a>
-                    <a class="item" href="request-help.html"><i class="warning icon"></i>Request Help </a>
-                    <a class="item"><i class="heart icon"></i>Offer Help</a>
-                    <div class="ui simple dropdown item">
-                        <i class="box icon"></i>
-                        Resource Guide
-                        <i class="dropdown icon"></i>
-                        <div class="menu">
-                            <div class="item"><em data-emoji=":mask:"></em> COVID-19</div>
-                            <div class="item"><em data-emoji=":woman_health_worker_tone3:"></em> Health and Medical
-                            </div>
-                            <div class="item"><em data-emoji=":brain:"></em> Mental Health</div>
-                            <div class="item"><em data-emoji=":bread:"></em> Food</div>
-                            <div class="item"><em data-emoji=":roll_of_paper:"></em> Necessities</div>
-                            <div class="item"><em data-emoji=":homes:"></em> Housing and Shelter</div>
-                            <div class="item"><em data-emoji=":construction_worker_tone3:"></em> Income and Employment
-                            </div>
-                            <div class="item"><em data-emoji=":military_medal:"></em> Service Members and Veterans</div>
-                            <div class="item"><em data-emoji=":warning:"></em> Crisis and Emergency</div>
-                            <div class="item"><em data-emoji=":older_man:"></em> Aging and Senior Services</div>
-                            <div class="item"><em data-emoji=":family_mwgb:"></em> Children and Families</div>
-                            <div class="item"><em data-emoji=":books:"></em> Education</div>
-                            <div class="item"><em data-emoji=":scales:"></em> Legal Services</div>
-                            <div class="item"><em data-emoji=":bus:"></em> Transporation</div>
-                            <div class="item"><em data-emoji=":octagonal_sign:"></em> Addictions</div>
-                            <div class="item"><em data-emoji=":wheelchair:"></em> Disability Services</div>
-                        </div>
-                    </div>
-                    <!-- <div class="right item">
-                        <a class="ui inverted button" href="/login.html">Log in</a>
-                        <a class="ui inverted button">Sign Up</a>
-                    </div> -->
-                </div>
-            </div>
-        </div>
 
         <div class="ui center aligned segment">
-            <h1 class="ui header">Request Help in Battle Creek, Michigan</h1>
+            <h1 class="ui icon header">
+                <i class="circular red warning icon"></i>
+                Request Help in Battle Creek, Michigan
+            </h1>
 
-            <h2 class="ui icon header">
-                <i class="heart icon"></i>
-                <div class="content">
-                    There's Hope for You
-                </div>
+            <h2 class="ui header">
+                There's Hope for You
             </h2>
+
+            <h3 class="ui center aligned red header">
+                IF THIS IS AN EMERGENCY CALL 911!
+            </h3>
         </div>
 
+        <div class="ui container raised segment">
+            <div class="ui two column stackable middle aligned grid">
+                <div class="left aligned row">
+                    <div class="two wide column">
+                        <a href="https://www.mi211.org/" target="_blank" rel="nofollow"><img src="assets/images/211mich.svg" alt="211 Michigan" class="ui tiny aligned middle left floated image" /></a>
+                    </div>
+                    <div class="fourteen wide column">
+                        <h3><a href="https://www.mi211.org/" target="_blank" rel="nofollow">United Way's 211</a> connects you with help of all kinds, right in your community </h3>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
 
-        <h3 class="ui center aligned red header">IF THIS IS AN EMERGENCY CALL 9-11!</h3>
-        <div class="ui text container">
-            <div class="ui segment">
-                <h4 class="ui top attached block header">
-                    Top Block Header
-                </h4>
-                <div class="ui attached segment">
-                    Segment
+        <div class="ui placeholder container segment">
+            <div class="ui two column stackable center aligned grid">
+                <div class="ui vertical divider">Or</div>
+                <div class="middle aligned row">
+                    <div class="column">
+                        <div class="ui icon header">
+                            <i class="phone icon"></i>
+                            <a class="ui button primary" href="tel:211">
+                                Call 211
+                            </a>
+                        </div>
+                        <div class="ui container">
+                            <p>
+                                211 is a vital service available 24/7/365 to connect you with help of all kinds, like housing support to financial assistance.<br/>
+                                TTY: 800-250-5628
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="ui icon header">
+                            <i class="mobile icon"></i>
+                            <a href="sms:898211" class="ui button secondary">Text 898-211</a>
+                        </div>
+                        <div class="ui text">
+                            <p>
+                                Availability and hours vary from regional center to regional center.<br/>
+                                <a href="https://www.mi211.org/about-2-1-1/text-chat" target="_blank">Check the availability in your county on the map located here</a><br/>
+                                *Standard text messaging rates may apply
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <h4 class="ui attached block header">
-                    Middle Block Header
-                </h4>
-                <div class="ui attached segment">
-                    Segment
-                </div>
-                <h4 class="ui bottom attached block header">
-                    Bottom Block Header
-                </h4>
             </div>
         </div>
+
+
         <div class="ui inverted vertical footer segment">
             <div class="ui container">
                 <div class="ui stackable inverted divided equal height stackable grid">
@@ -207,6 +148,7 @@
                             <a href="#" class="item">FAQ</a>
                             <a href="#" class="item">Code of Conduct</a>
                             <a href="#" class="item">Contact Us</a>
+                            <a href="#" class="item">Privacy</a>
                         </div>
                     </div>
                     <div class="three wide column">
@@ -219,7 +161,7 @@
                     <div class="seven wide column">
                         <h4 class="ui inverted header">Part of Networked.Community</h4>
                         <p>If you would like to bring this system to your community, please <a
-                                href="https://thecure.to/Selfishness">join us</a>.</p>
+                                href="https://thecure.to/Selfishness" rel="nofollow">join us</a>.</p>
                         <p>We're happy to help!</p>
                     </div>
                 </div>
