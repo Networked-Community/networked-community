@@ -10,7 +10,6 @@
     <!-- Site Properties -->
     <title>Battle Creek, Michigan - Networked.Community</title>
 
-
     <script src="/assets/library/jquery.min.js"></script>
     <script src="/scripts/semantic.min.js"></script>
 
@@ -18,6 +17,9 @@
     <link rel="stylesheet" type="text/css" class="ui" href="/css/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="/components/emoji.css">
     <link rel="stylesheet" type="text/css" href="/components/icon.css">
+    <link rel="stylesheet" type="text/css" href="/components/calendar.css">
+    <link rel="stylesheet" type="text/css" href="/components/popup.css">
+    <link rel="stylesheet" type="text/css" href="/components/transition.css">
     <link rel="stylesheet" type="text/css" href="/css/main2.css">
 
     <script>
@@ -31,6 +33,61 @@
                 $('.ui.sticky')
                     .sticky({ context: '#help-rail' });
 
+                $('.ui.calendar').calendar({
+                    type: 'datetime' });
+
+                $('#request-help-form')
+                    .form({
+                        on: 'blur',
+                        fields: {
+                            firstName: {
+                                identifier: 'first-name',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Please enter your first name'
+                                    }
+                                ]
+                            },
+                            lasLname: {
+                                identifier: 'last-name',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Please enter your last name'
+                                    }
+                                ]
+                            },
+                            phoneNumber: {
+                                identifier: 'phone-number',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Please enter your phone number'
+                                    }
+                                ]
+                            },
+                            emailAddress: {
+                                identifier: 'email-address',
+                                rules: [
+                                    {
+                                        type: 'email',
+                                        prompt: 'Please provide a valid email address'
+                                    }
+                                ]
+                            },
+                            requestHelpReason: {
+                                identifier: 'help-request-reason',
+                                rules: [
+                                    {
+                                        type: 'empty',
+                                        prompt: 'Please provide the reason why you are requesting help'
+                                    }
+                                ]
+                            }
+                        }
+                    })
+                    ;
             });
     </script>
 </head>
@@ -91,14 +148,17 @@
             <div class="ui two column stackable middle aligned grid">
                 <div class="left aligned row">
                     <div class="two wide column">
-                        <a href="https://www.mi211.org/" target="_blank" rel="nofollow"><img src="assets/images/211mich.svg" alt="211 Michigan" class="ui tiny aligned middle left floated image" /></a>
+                        <a href="https://www.mi211.org/" target="_blank" rel="nofollow"><img
+                                src="assets/images/211mich.svg" alt="211 Michigan"
+                                class="ui tiny aligned middle left floated image" /></a>
                     </div>
                     <div class="fourteen wide column">
-                        <h3><a href="https://www.mi211.org/" target="_blank" rel="nofollow">United Way's 211</a> connects you with help of all kinds, right in your community </h3>
+                        <h3><a href="https://www.mi211.org/" target="_blank" rel="nofollow">United Way's 211</a>
+                            connects you with help of all kinds, right in your community </h3>
                     </div>
                 </div>
             </div>
-                
+
         </div>
 
         <div class="ui placeholder container segment">
@@ -114,7 +174,8 @@
                         </div>
                         <div class="ui container">
                             <p>
-                                211 is a vital service available 24/7/365 to connect you with help of all kinds, like housing support to financial assistance.<br/>
+                                211 is a vital service available 24/7/365 to connect you with help of all kinds, like
+                                housing support to financial assistance.<br />
                                 TTY: 800-250-5628
                             </p>
                         </div>
@@ -127,8 +188,9 @@
                         </div>
                         <div class="ui text">
                             <p>
-                                Availability and hours vary from regional center to regional center.<br/>
-                                <a href="https://www.mi211.org/about-2-1-1/text-chat" target="_blank">Check the availability in your county on the map located here</a><br/>
+                                Availability and hours vary from regional center to regional center.<br />
+                                <a href="https://www.mi211.org/about-2-1-1/text-chat" target="_blank">Check the
+                                    availability in your county on the map located here</a><br />
                                 *Standard text messaging rates may apply
                             </p>
                         </div>
@@ -137,6 +199,57 @@
             </div>
         </div>
 
+        <div class="ui horizontal divider">
+            Or
+        </div>
+
+        <form class="ui form container segment" id="request-help-form">
+            <h2 class="ui header">
+                Reach out to a Battle Creek Area Volunteer
+            </h2>
+            <p>
+                Please fill out the form below to get connected with volunteers in our local area.<br />
+                The information that you enter is confidential, and will not be resold or redistributed for commercial
+                purposes.
+            </p>
+            <div class="required field">
+                <label>First Name</label>
+                <input type="text" name="first-name" placeholder="First Name">
+            </div>
+            <div class="required field">
+                <label>Last Name</label>
+                <input type="text" name="last-name" placeholder="Last Name">
+            </div>
+            <div class="required field">
+                <label>Phone Number</label>
+                <input type="text" name="phone-number" placeholder="Phone Number">
+            </div>
+            <div class="required field">
+                <label>Email Address</label>
+                <input type="text" name="email-address" placeholder="Email Address">
+            </div>
+            <div class="required field">
+                <label>What do you need help with?</label>
+                <textarea name="help-request-reason" placeholder="I need someone to help me with..."></textarea>
+            </div>
+            <div class="field">
+                <label>Is there a specific day/time for your request?</label>
+                <div class="ui calendar">
+                  <div class="ui input left icon">
+                    <i class="calendar icon"></i>
+                    <input type="text" name="help-request-date" placeholder="Day and Time of Request" name="date">
+                  </div>        
+                </div>
+            </div>
+            
+            <div class="required field">
+                <div class="ui checkbox">
+                    <input type="checkbox" tabindex="0" class="hidden">
+                    <label>I agree to be contacted by a Networked.Community Volunteer</label>
+                </div>
+            </div>
+            <button class="ui button" type="submit">Submit</button>
+        </form>
 
         <div class="ui inverted vertical footer segment">
             <div class="ui container">
@@ -172,6 +285,8 @@
     <script src="/components/visibility.js"></script>
     <script src="/components/sidebar.js"></script>
     <script src="/components/transition.js"></script>
+    <script src="/components/popup.js"></script>
+    <script src="/components/calendar.js"></script>
 </body>
 
 </html>
