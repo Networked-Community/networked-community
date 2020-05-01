@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Site Properties -->
+    <title>Battle Creek, Michigan - Networked.Community</title>
+    <link rel="stylesheet" type="text/css" href="/components/reset.css">
+    <link rel="stylesheet" type="text/css" href="/components/site.css">
+
+    <link rel="stylesheet" type="text/css" href="/components/container.css">
+    <link rel="stylesheet" type="text/css" href="/components/grid.css">
+    <link rel="stylesheet" type="text/css" href="/components/header.css">
+    <link rel="stylesheet" type="text/css" href="/components/image.css">
+    <link rel="stylesheet" type="text/css" href="/components/menu.css">
+
+    <link rel="stylesheet" type="text/css" href="/components/divider.css">
+    <link rel="stylesheet" type="text/css" href="/components/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="/components/segment.css">
+    <link rel="stylesheet" type="text/css" href="/components/button.css">
+    <link rel="stylesheet" type="text/css" href="/components/list.css">
+    <link rel="stylesheet" type="text/css" href="/components/icon.css">
+    <link rel="stylesheet" type="text/css" href="/components/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="/components/transition.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+    <script src="/assets/library/jquery.min.js"></script>
+    <script src="/components/visibility.js"></script>
+    <script src="/components/sidebar.js"></script>
+    <script src="/components/transition.js"></script>
+
+    <script>
+        $(document)
+            .ready(function () {
+
+                // fix menu when passed
+                $('.masthead')
+                    .visibility({
+                        once: false,
+                        onBottomPassed: function () {
+                            $('.fixed.menu').transition('fade in');
+                        },
+                        onBottomPassedReverse: function () {
+                            $('.fixed.menu').transition('fade out');
+                        }
+                    })
+                    ;
+
+                // create sidebar and attach to menu open
+                $('.ui.sidebar')
+                    .sidebar('attach events', '.toc.item')
+                    ;
+
+            })
+            ;
+    </script>
+</head>
+
+<body>
+
+    <!-- Following Menu -->
+    <div class="ui large top fixed hidden menu">
+        <div class="ui container">
+            <a class="active item">Home</a>
+            <a class="item">Request Help</a>
+            <a class="item">Volunteer</a>
+            <div class="ui simple dropdown item">
+                Resource Guide
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <div class="item">COVID-19</div>
+                    <div class="item">Health and Medical</div>
+                    <div class="item">Mental Health</div>
+                    <div class="item">Food</div>
+                    <div class="item">Necessities</div>
+                    <div class="item">Housing and Shelter</div>
+                    <div class="item">Income and Employment</div>
+                    <div class="item">Service Members and Veterans</div>
+                    <div class="item">Crisis and Emergency</div>
+                    <div class="item">Aging and Senior Services</div>
+                    <div class="item">Children and Families</div>
+                    <div class="item">Education</div>
+                    <div class="item">Legal Services</div>
+                    <div class="item">Transporation</div>
+                    <div class="item">Addictions</div>
+                    <div class="item">Disability Services</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="ui vertical inverted sidebar menu">
+        <a class="active item">Home</a>
+        <a class="item">Request Help</a>
+        <a class="item">Volunteer</a>
+        <div class="item">Resource Guide
+            <div class="menu">
+                <div class="item">COVID-19</div>
+                <div class="item">Health and Medical</div>
+                <div class="item">Mental Health</div>
+                <div class="item">Food</div>
+                <div class="item">Necessities</div>
+                <div class="item">Housing and Shelter</div>
+                <div class="item">Income and Employment</div>
+                <div class="item">Service Members and Veterans</div>
+                <div class="item">Crisis and Emergency</div>
+                <div class="item">Aging and Senior Services</div>
+                <div class="item">Children and Families</div>
+                <div class="item">Education</div>
+                <div class="item">Legal Services</div>
+                <div class="item">Transporation</div>
+                <div class="item">Addictions</div>
+                <div class="item">Disability Services</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Contents -->
+    <div class="pusher">
+        <div class="ui inverted masthead center aligned segment">
+            <div class="ui container">
+                <div class="ui large secondary inverted pointing menu">
+                    <a class="toc item">
+                        <i class="sidebar icon"></i>
+                    </a>
+                    <a class="active item">Home</a>
+                    <a class="item">Request Help</a>
+                    <a class="item">Volunteer</a>
+                    <div class="ui simple dropdown item">
+                        Resource Guide
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item">COVID-19</div>
+                            <div class="item">Health and Medical</div>
+                            <div class="item">Mental Health</div>
+                            <div class="item">Food</div>
+                            <div class="item">Necessities</div>
+                            <div class="item">Housing and Shelter</div>
+                            <div class="item">Income and Employment</div>
+                            <div class="item">Service Members and Veterans</div>
+                            <div class="item">Crisis and Emergency</div>
+                            <div class="item">Aging and Senior Services</div>
+                            <div class="item">Children and Families</div>
+                            <div class="item">Education</div>
+                            <div class="item">Legal Services</div>
+                            <div class="item">Transporation</div>
+                            <div class="item">Addictions</div>
+                            <div class="item">Disability Services</div>
+                        </div>
+                    </div>
+                    <!-- <div class="right item">
+                        <a class="ui inverted button" href="/login.html">Log in</a>
+                        <a class="ui inverted button">Sign Up</a>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="ui text container">
+                <h1 class="ui inverted header">
+                    Battle Creek, Michigan &nbsp; Networked.Community
+                </h1>
+                <h2 class="ui inverted header">A New Society Awaits</h2>
+                <div class="ui huge red button">Request Help<i class="right up warning icon"></i></div>
+                <div class="ui huge primary button">Volunteer<i class="right heart icon"></i></div>
+                <div class="ui huge green button">Resource Guide<i class="right box icon"></i></div>
+            </div>
+
+        </div>
+
+        <div class="ui vertical stripe segment">
+            <div class="ui middle aligned stackable grid container">
+                <div class="row">
+                    <div class="eight wide column">
+                        <h3 class="ui header">Hi Neighbor</h3>
+                        <p>Currently, the spread of COVID-19 has made communities kick into high gear in preparation for
+                            supporting those most impacted by the virus.</p>
+                        <h3 class="ui header">Building Community</h3>
+                        <p>This site was set up by concerned members of the Battle Creek community to help share out
+                            information and resources. </p>
+                        <h3 class="ui header">Responding Together</h3>
+                        <p>No matter what background you have, it will take all of us to support eachother during this
+                            crisis, so consider offering help. </p>
+                    </div>
+                    <div class="six wide right floated column">
+                        <img src="/assets/images/together-heart.jpg" class="ui large bordered rounded image">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="center aligned column">
+                        <a class="ui huge blue button">Volunteer <i class="right heart icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="ui vertical stripe quote segment">
+            <div class="ui equal width stackable internally celled grid">
+                <div class="center aligned row">
+                    <div class="column">
+                        <h3>"It was easy to find the help I needed"</h3>
+                        <p>People helping people makes things happen</p>
+                    </div>
+                    <div class="column">
+                        <h3>"I've never felt better helping those around me."</h3>
+                        <p>
+                            <img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Joe</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui vertical stripe segment">
+            <div class="ui text container">
+                <h3 class="ui header">Volunteer Timebank</h3>
+                <p>As each neighbor we all have skills and resources to contribute to share with one another.
+                    This is a platform for people to connect with each other and exchange, whether it's delivering food,
+                    sending activities for kids to play at home, or making calls to check on seniors. </p>
+                <a class="ui large red button">Request Help <i class="right up warning icon"></i></a>
+                <a class="ui large blue button">Volunteer <i class="right heart icon"></i></a>
+                <hr />
+
+                <h3 class="ui header">Community Resource Guide</h3>
+                <p>There have been a lot of announcements and changes to regular services in the city. This guide is a
+                    grassroots attempt to bring all of this news together into one place and be regularly updated.
+                    You will find info about services related to food, housing, child care, transportation, utilities,
+                    and more.
+                </p>
+                <a class="ui large green button">Read The Guide</a>
+                <!-- <h4 class="ui horizontal header divider">
+                    <a href="#">Case Studies</a>
+                </h4> -->
+            </div>
+        </div>
+
+
+        <div class="ui inverted vertical footer segment">
+            <div class="ui container">
+                <div class="ui stackable inverted divided equal height stackable grid">
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">About</h4>
+                        <div class="ui inverted link list">
+                            <a href="#" class="item">Sitemap</a>
+                            <a href="#" class="item">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">Other Stuff</h4>
+                        <div class="ui inverted link list">
+                            <a href="#" class="item">Banana Pre-Order</a>
+                            <a href="#" class="item">DNA FAQ</a>
+                            <a href="#" class="item">How To Access</a>
+                            <a href="#" class="item">Favorite X-Men</a>
+                        </div>
+                    </div>
+                    <div class="seven wide column">
+                        <h4 class="ui inverted header">Part of Networked.Community</h4>
+                        <p>If you would like to bring this system to your community, please <a
+                                href="https://thecure.to/Selfishness">join us</a>.</p>
+                        <p>We're happy to help!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
