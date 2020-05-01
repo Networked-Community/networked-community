@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="/components/header.css">
     <link rel="stylesheet" type="text/css" href="/components/image.css">
     <link rel="stylesheet" type="text/css" href="/components/menu.css">
+    <link rel="stylesheet" type="text/css" href="/components/card.css">
 
     <link rel="stylesheet" type="text/css" href="/components/divider.css">
     <link rel="stylesheet" type="text/css" href="/components/dropdown.css">
@@ -26,6 +27,8 @@
     <link rel="stylesheet" type="text/css" href="/components/icon.css">
     <link rel="stylesheet" type="text/css" href="/components/sidebar.css">
     <link rel="stylesheet" type="text/css" href="/components/transition.css">
+    <link rel="stylesheet" type="text/css" href="/components/emoji.css">
+    <link rel="stylesheet" type="text/css" href="/components/item.css">
 
     <link rel="stylesheet" type="text/css" href="/css/main.css">
 
@@ -63,29 +66,29 @@
     <!-- Following Menu -->
     <div class="ui large top fixed hidden menu">
         <div class="ui container">
-            <a class="item" href="/index.html">Home</a>
-            <a class="active item">Request Help</a>
-            <a class="item">Volunteer</a>
+            <a class="active item"><i class="home icon"></i> Home</a>
+            <a class="item" href="request-help.html"><i class="warning icon"></i> Request Help</a>
+            <a class="item"><i class="heart icon"></i> Offer Help</a>
             <div class="ui simple dropdown item">
-                Resource Guide
+                <i class="box icon"></i> Resource Guide
                 <i class="dropdown icon"></i>
                 <div class="menu">
-                    <div class="item">COVID-19</div>
-                    <div class="item">Health and Medical</div>
-                    <div class="item">Mental Health</div>
-                    <div class="item">Food</div>
-                    <div class="item">Necessities</div>
-                    <div class="item">Housing and Shelter</div>
-                    <div class="item">Income and Employment</div>
-                    <div class="item">Service Members and Veterans</div>
-                    <div class="item">Crisis and Emergency</div>
-                    <div class="item">Aging and Senior Services</div>
-                    <div class="item">Children and Families</div>
-                    <div class="item">Education</div>
-                    <div class="item">Legal Services</div>
-                    <div class="item">Transporation</div>
-                    <div class="item">Addictions</div>
-                    <div class="item">Disability Services</div>
+                    <div class="item"><em data-emoji=":mask:"></em> COVID-19</div>
+                    <div class="item"><em data-emoji=":woman_health_worker_tone3:"></em> Health and Medical</div>
+                    <div class="item"><em data-emoji=":brain:"></em> Mental Health</div>
+                    <div class="item"><em data-emoji=":bread:"></em> Food</div>
+                    <div class="item"><em data-emoji=":roll_of_paper:"></em> Necessities</div>
+                    <div class="item"><em data-emoji=":homes:"></em> Housing and Shelter</div>
+                    <div class="item"><em data-emoji=":construction_worker_tone3:"></em> Income and Employment</div>
+                    <div class="item"><em data-emoji=":military_medal:"></em> Service Members and Veterans</div>
+                    <div class="item"><em data-emoji=":warning:"></em> Crisis and Emergency</div>
+                    <div class="item"><em data-emoji=":older_man:"></em> Aging and Senior Services</div>
+                    <div class="item"><em data-emoji=":family_mwgb:"></em> Children and Families</div>
+                    <div class="item"><em data-emoji=":books:"></em> Education</div>
+                    <div class="item"><em data-emoji=":scales:"></em> Legal Services</div>
+                    <div class="item"><em data-emoji=":bus:"></em> Transporation</div>
+                    <div class="item"><em data-emoji=":octagonal_sign:"></em> Addictions</div>
+                    <div class="item"><em data-emoji=":wheelchair:"></em> Disability Services</div>
                 </div>
             </div>
         </div>
@@ -93,62 +96,65 @@
 
     <!-- Sidebar Menu -->
     <div class="ui vertical inverted sidebar menu">
-        <a class="item" href="/index.html">Home</a>
-        <a class="active item">Request Help</a>
-        <a class="item">Volunteer</a>
-        <div class="item">Resource Guide
+        <a class="active item"><i class="home icon"></i> Home</a>
+        <a class="item" href="request-help.html"><i class="warning icon"></i> Request Help</a>
+        <a class="item"><i class="heart icon"></i> Offer Help</a>
+        <div class="item"><i class="box icon"></i> Resource Guide
             <div class="menu">
-                <div class="item">COVID-19</div>
-                <div class="item">Health and Medical</div>
-                <div class="item">Mental Health</div>
-                <div class="item">Food</div>
-                <div class="item">Necessities</div>
-                <div class="item">Housing and Shelter</div>
-                <div class="item">Income and Employment</div>
-                <div class="item">Service Members and Veterans</div>
-                <div class="item">Crisis and Emergency</div>
-                <div class="item">Aging and Senior Services</div>
-                <div class="item">Children and Families</div>
-                <div class="item">Education</div>
-                <div class="item">Legal Services</div>
-                <div class="item">Transporation</div>
-                <div class="item">Addictions</div>
-                <div class="item">Disability Services</div>
+                <div class="item"><em data-emoji=":mask:"></em> COVID-19</div>
+                <div class="item"><em data-emoji=":woman_health_worker_tone3:"></em> Health and Medical</div>
+                <div class="item"><em data-emoji=":brain:"></em> Mental Health</div>
+                <div class="item"><em data-emoji=":bread:"></em> Food</div>
+                <div class="item"><em data-emoji=":roll_of_paper:"></em> Necessities</div>
+                <div class="item"><em data-emoji=":homes:"></em> Housing and Shelter</div>
+                <div class="item"><em data-emoji=":construction_worker_tone3:"></em> Income and Employment</div>
+                <div class="item"><em data-emoji=":military_medal:"></em> Service Members and Veterans</div>
+                <div class="item"><em data-emoji=":warning:"></em> Crisis and Emergency</div>
+                <div class="item"><em data-emoji=":older_man:"></em> Aging and Senior Services</div>
+                <div class="item"><em data-emoji=":family_mwgb:"></em> Children and Families</div>
+                <div class="item"><em data-emoji=":books:"></em> Education</div>
+                <div class="item"><em data-emoji=":scales:"></em> Legal Services</div>
+                <div class="item"><em data-emoji=":bus:"></em> Transporation</div>
+                <div class="item"><em data-emoji=":octagonal_sign:"></em> Addictions</div>
+                <div class="item"><em data-emoji=":wheelchair:"></em> Disability Services</div>
             </div>
         </div>
     </div>
 
     <!-- Page Contents -->
     <div class="pusher">
-        <div class="ui inverted masthead center aligned segment">
+        <div class="ui inverted center aligned segment">
             <div class="ui container">
                 <div class="ui large secondary inverted pointing menu">
                     <a class="toc item">
                         <i class="sidebar icon"></i>
                     </a>
-                    <a class="item" href="/index.html">Home</a>
-                    <a class="active item">Request Help</a>
-                    <a class="item">Volunteer</a>
+                    <a class="active item"><i class="home icon"></i>Home</a>
+                    <a class="item" href="request-help.html"><i class="warning icon"></i>Request Help </a>
+                    <a class="item"><i class="heart icon"></i>Offer Help</a>
                     <div class="ui simple dropdown item">
+                        <i class="box icon"></i>
                         Resource Guide
                         <i class="dropdown icon"></i>
                         <div class="menu">
-                            <div class="item">COVID-19</div>
-                            <div class="item">Health and Medical</div>
-                            <div class="item">Mental Health</div>
-                            <div class="item">Food</div>
-                            <div class="item">Necessities</div>
-                            <div class="item">Housing and Shelter</div>
-                            <div class="item">Income and Employment</div>
-                            <div class="item">Service Members and Veterans</div>
-                            <div class="item">Crisis and Emergency</div>
-                            <div class="item">Aging and Senior Services</div>
-                            <div class="item">Children and Families</div>
-                            <div class="item">Education</div>
-                            <div class="item">Legal Services</div>
-                            <div class="item">Transporation</div>
-                            <div class="item">Addictions</div>
-                            <div class="item">Disability Services</div>
+                            <div class="item"><em data-emoji=":mask:"></em> COVID-19</div>
+                            <div class="item"><em data-emoji=":woman_health_worker_tone3:"></em> Health and Medical
+                            </div>
+                            <div class="item"><em data-emoji=":brain:"></em> Mental Health</div>
+                            <div class="item"><em data-emoji=":bread:"></em> Food</div>
+                            <div class="item"><em data-emoji=":roll_of_paper:"></em> Necessities</div>
+                            <div class="item"><em data-emoji=":homes:"></em> Housing and Shelter</div>
+                            <div class="item"><em data-emoji=":construction_worker_tone3:"></em> Income and Employment
+                            </div>
+                            <div class="item"><em data-emoji=":military_medal:"></em> Service Members and Veterans</div>
+                            <div class="item"><em data-emoji=":warning:"></em> Crisis and Emergency</div>
+                            <div class="item"><em data-emoji=":older_man:"></em> Aging and Senior Services</div>
+                            <div class="item"><em data-emoji=":family_mwgb:"></em> Children and Families</div>
+                            <div class="item"><em data-emoji=":books:"></em> Education</div>
+                            <div class="item"><em data-emoji=":scales:"></em> Legal Services</div>
+                            <div class="item"><em data-emoji=":bus:"></em> Transporation</div>
+                            <div class="item"><em data-emoji=":octagonal_sign:"></em> Addictions</div>
+                            <div class="item"><em data-emoji=":wheelchair:"></em> Disability Services</div>
                         </div>
                     </div>
                     <!-- <div class="right item">
@@ -157,16 +163,40 @@
                     </div> -->
                 </div>
             </div>
-
-            <div class="ui text container">
-                <h1 class="ui inverted header">
-                    Request Help
-                </h1>
-                <h2 class="ui inverted header">Hope is here</h2>
-            </div>
-
         </div>
 
+        <div class="ui center aligned segment">
+            <h1 class="ui header">Request Help in Battle Creek, Michigan</h1>
+
+            <h2 class="ui icon header">
+                <i class="heart icon"></i>
+                <div class="content">
+                    There's Hope for You
+                </div>
+            </h2>
+        </div>
+
+
+        <h3 class="ui center aligned red header">IF THIS IS AN EMERGENCY CALL 9-11!</h3>
+        <div class="ui text container">
+            <div class="ui segment">
+                <h4 class="ui top attached block header">
+                    Top Block Header
+                </h4>
+                <div class="ui attached segment">
+                    Segment
+                </div>
+                <h4 class="ui attached block header">
+                    Middle Block Header
+                </h4>
+                <div class="ui attached segment">
+                    Segment
+                </div>
+                <h4 class="ui bottom attached block header">
+                    Bottom Block Header
+                </h4>
+            </div>
+        </div>
         <div class="ui inverted vertical footer segment">
             <div class="ui container">
                 <div class="ui stackable inverted divided equal height stackable grid">
@@ -182,8 +212,8 @@
                     <div class="three wide column">
                         <h4 class="ui inverted header">For Organizations</h4>
                         <div class="ui inverted link list">
-                            <a href="#" class="item">Register to be listed</a>
-                            <a href="#" class="item">Guidelines</a>
+                            <a href="#" class="item">Register your Organization</a>
+                            <a href="#" class="item">Registration Guidelines</a>
                         </div>
                     </div>
                     <div class="seven wide column">
