@@ -32,25 +32,49 @@
                 // create sidebar and attach to menu open
                 $('.ui.sidebar')
                     .sidebar('attach events', '.big.launch');
-                
-                $('.jiggle.cards .card')
+
+                $('.pulsed.cards .card')
                     .transition({
-                        animation : 'pulse',
-                        duration  : 800,
-                        interval  : 200
+                        animation: 'pulse',
+                        duration: 800,
+                        interval: 200
                     });
             });
     </script>
 </head>
 
-<body class="basic minimal" ontouchstart="">
+<body class="basic minimal " ontouchstart="">
+
 
     <!-- Sidebar Menu -->
     <div class="ui vertical inverted sidebar menu" id="toc">
+        <div class="item">
+            Networked.Community
+        </div>
         <a class="item" href="/index.html"><i class="home icon"></i> Home</a>
-        <a class="item" href="/request-help.html"><i class="warning icon"></i> Request Help</a>
-        <a class="item" href="/offer-help.html"><i class="heart icon"></i> Offer Help</a>
-        <a class="active item" href="/resource-guide.html"><i class="book icon"></i> Resource Guide</a>
+        <a class="item" href="/request-help.html"><i class="warning red icon"></i> Request Help</a>
+        <a class="item" href="/offer-help.html"><i class="heart pink icon"></i> Offer Help</a>
+        <a class="item active"><i class="book blue icon"></i> Resource Guide</a>
+        <div class="menu">
+            <a class="item" href="/covid-19.html"><em data-emoji=":mask:"></em> COVID-19</a>
+            <a class="item" href="#"><em data-emoji=":medical_symbol:"></em> Health and Medical</a>
+            <a class="item" href="#"><em data-emoji=":brain:"></em> Mental Health</a>
+            <a class="item" href="#"><em data-emoji=":bread:"></em> Food</a>
+            <a class="item" href="#"><em data-emoji=":roll_of_paper:"></em> Necessities</a>
+            <a class="item" href="#"><em data-emoji=":homes:"></em> Housing and Shelter</a>
+            <a class="item" href="#"><em data-emoji=":construction_worker_tone3:"></em> Income and Employment</a>
+            <a class="item" href="#"><em data-emoji=":military_medal:"></em> Service Members and Veterans</a>
+            <a class="item" href="#"><em data-emoji=":warning:"></em> Crisis and Emergency</a>
+            <a class="item" href="#"><em data-emoji=":older_man:"></em> Aging and Senior Services</a>
+            <a class="item" href="#"><em data-emoji=":family_mwgb:"></em> Children and Families</a>
+            <a class="item" href="#"><em data-emoji=":books:"></em> Education</a>
+            <a class="item" href="#"><em data-emoji=":scales:"></em> Legal Services</a>
+            <a class="item" href="#"><em data-emoji=":bus:"></em> Transporation</a>
+            <a class="item" href="#"><em data-emoji=":octagonal_sign:"></em> Addictions</a>
+            <a class="item" href="#"><em data-emoji=":wheelchair:"></em> Disability Services</a>
+        </div>
+
+        <a class="item" href="/organization-directory.html"><i class="list icon right"></i> Organization Directory</a>
     </div>
 
     <div class="ui black big launch right attached fixed button">
@@ -60,300 +84,300 @@
 
     <!-- Page Contents -->
     <div class="pusher">
+        <div class="full height">
+            <div class="ui center aligned basic container segment">
+                <h1 class="ui icon header">
+                    <i class="circular blue book icon"></i>
+                    Community Resource Guide
+                </h1>
 
-        <div class="ui center aligned segment">
-            <h1 class="ui icon header">
-                <i class="circular blue book icon"></i>
-                Community Resource Guide
-            </h1>
+                <h2 class="ui header">
+                    Find Resources and Services in Battle Creek, Michigan
+                </h2>
 
-            <h2 class="ui header">
-                Find Resources and Services in Battle Creek, Michigan
-            </h2>
-
-        </div>
-        <div class="ui center aligned container segment">
-            <div class="ui jiggle four stackable cards">
-                <div class="card">
-                    <a class="image" href="/covid-19.html">
-                        <em data-emoji=":mask:" class="large"></em>
-                    </a>
-                    <div class="content">
-                        <div class="header">COVID-19</div>
-                        <div class="description">
-                            COVID-19 Resources and Services
-                        </div>
-                    </div>
-                    <a href="/covid-19.html" class="ui bottom attached blue button">
-                        <i class="book icon"></i>
-                        Read More
-                    </a>
-                </div>
-                <div class="card">
-                    <a class="image" href="#">
-                        <em data-emoji=":medical_symbol:" class="large"></em>
-                    </a>
-                    <div class="content">
-                        <div class="header">Health and Medical</div>
-                        <div class="description">
-                            Resources and services for health
-                        </div>
-                    </div>
-                    <a href="#" class="ui bottom attached blue button">
-                        <i class="book icon"></i>
-                        Read More
-                    </a>
-                </div>
-                <div class="card">
-                    <a class="image" href="#">
-                        <em data-emoji=":brain:" class="large"></em>
-                    </a>
-                    <div class="content">
-                        <div class="header">Mental Health</div>
-                        <div class="description">
-                            Resources and services for mental health
-                        </div>
-                    </div>
-                    <a href="#" class="ui bottom attached blue button">
-                        <i class="book icon"></i>
-                        Read More
-                    </a>
-                </div>
-                <div class="card">
-                    <a class="image" href="#">
-                        <em data-emoji=":bread:" class="large"></em>
-                    </a>
-                    <div class="content">
-                        <div class="header">Food</div>
-                        <div class="description">
-                            Resources and services for food
-                        </div>
-                    </div>
-                    <a href="#" class="ui bottom attached blue button">
-                        <i class="book icon"></i>
-                        Read More
-                    </a>
-                </div>
-                <div class="card">
-                    <a class="image" href="#">
-                        <em data-emoji=":roll_of_paper:" class="large"></em>
-                    </a>
-                    <div class="content">
-                        <div class="header">Necessities</div>
-                        <div class="description">
-                            Resources and services for necessities
-                        </div>
-                    </div>
-                    <a href="#" class="ui bottom attached blue button">
-                        <i class="book icon"></i>
-                        Read More
-                    </a>
-                </div>
-                <div class="card">
-                    <a class="image" href="#">
-                        <em data-emoji=":homes:" class="large"></em>
-                    </a>
-                    <div class="content">
-                        <div class="header">Housing and Shelter</div>
-                        <div class="description">
-                            Resources and services for housing and shelter
-                        </div>
-                    </div>
-                    <a href="#" class="ui bottom attached blue button">
-                        <i class="book icon"></i>
-                        Read More
-                    </a>
-                </div>
-                <div class="card">
-                    <a class="image" href="#">
-                        <em data-emoji=":construction_worker_tone3:" class="large"></em>
-                    </a>
-                    <div class="content">
-                        <div class="header">Income and Employment</div>
-                        <div class="description">
-                            Resources and services to help with income and employment
-                        </div>
-                    </div>
-                    <a href="#" class="ui bottom attached blue button">
-                        <i class="book icon"></i>
-                        Read More
-                    </a>
-                </div>
-                <div class="card">
-                    <a class="image" href="#">
-                        <em data-emoji=":military_medal:" class="large"></em>
-                    </a>
-                    <div class="content">
-                        <div class="header">Service Members and Veterans</div>
-                        <div class="description">
-                            Resources and services for service members and veterans
-                        </div>
-                    </div>
-                    <a href="#" class="ui bottom attached blue button">
-                        <i class="book icon"></i>
-                        Read More
-                    </a>
-                </div>
-                <div class="card">
-                    <a class="image" href="#">
-                        <em data-emoji=":warning:" class="large"></em>
-                    </a>
-                    <div class="content">
-                        <div class="header">Crisis and Emergency</div>
-                        <div class="description">
-                            Resources and services for crisis or emergencies
-                        </div>
-                    </div>
-                    <a href="#" class="ui bottom attached blue button">
-                        <i class="book icon"></i>
-                        Read More
-                    </a>
-                </div>
-                <div class="card">
-                    <a class="image" href="#">
-                        <em data-emoji=":older_man:" class="large"></em>
-                    </a>
-                    <div class="content">
-                        <div class="header">Aging and Senior Services</div>
-                        <div class="description">
-                            Resources and services for seniors and those that are aging.
-                        </div>
-                    </div>
-                    <a href="#" class="ui bottom attached blue button">
-                        <i class="book icon"></i>
-                        Read More
-                    </a>
-                </div>
-                <div class="card">
-                    <a class="image" href="#">
-                        <em data-emoji=":family_mwgb:" class="large"></em>
-                    </a>
-                    <div class="content">
-                        <div class="header">Children and Families</div>
-                        <div class="description">
-                            Resources and services for children and families
-                        </div>
-                    </div>
-                    <a href="#" class="ui bottom attached blue button">
-                        <i class="book icon"></i>
-                        Read More
-                    </a>
-                </div>
-                <div class="card">
-                    <a class="image" href="#">
-                        <em data-emoji=":books:" class="large"></em>
-                    </a>
-                    <div class="content">
-                        <div class="header">Education</div>
-                        <div class="description">
-                            Resources and services to learn and stay educated
-                        </div>
-                    </div>
-                    <a href="#" class="ui bottom attached blue button">
-                        <i class="book icon"></i>
-                        Read More
-                    </a>
-                </div>
-                <div class="card">
-                    <a class="image" href="#">
-                        <em data-emoji=":scales:" class="large"></em>
-                    </a>
-                    <div class="content">
-                        <div class="header">Legal Services</div>
-                        <div class="description">
-                            Resources and services for legal matters
-                        </div>
-                    </div>
-                    <a href="#" class="ui bottom attached blue button">
-                        <i class="book icon"></i>
-                        Read More
-                    </a>
-                </div>
-                <div class="card">
-                    <a class="image" href="#">
-                        <em data-emoji=":bus:" class="large"></em>
-                    </a>
-                    <div class="content">
-                        <div class="header">Transporation</div>
-                        <div class="description">
-                            Resources and services for transportation needs
-                        </div>
-                    </div>
-                    <a href="#" class="ui bottom attached blue button">
-                        <i class="book icon"></i>
-                        Read More
-                    </a>
-                </div>
-                <div class="card">
-                    <a class="image" href="#">
-                        <em data-emoji=":octagonal_sign:" class="large"></em>
-                    </a>
-                    <div class="content">
-                        <div class="header">Addictions</div>
-                        <div class="description">
-                            Resources and services for those struggling with addiction
-                        </div>
-                    </div>
-                    <a href="#" class="ui bottom attached blue button">
-                        <i class="book icon"></i>
-                        Read More
-                    </a>
-                </div>
-                <div class="card">
-                    <a class="image" href="#">
-                        <em data-emoji=":wheelchair:" class="large"></em>
-                    </a>
-                    <div class="content">
-                        <div class="header">Disability Services</div>
-                        <div class="description">
-                            Resources and services for those facing a disability
-                        </div>
-                    </div>
-                    <a href="#" class="ui bottom attached blue button">
-                        <i class="book icon"></i>
-                        Read More
-                    </a>
-                </div>
             </div>
-        </div>
-        <div class="ui inverted vertical footer segment">
-            <div class="ui container">
-                <div class="ui stackable inverted divided equal height stackable grid">
-                    <div class="three wide column">
-                        <h4 class="ui inverted header">About</h4>
-                        <div class="ui inverted link list">
-                            <a href="#" class="item">Mission</a>
-                            <a href="#" class="item">FAQ</a>
-                            <a href="#" class="item">Code of Conduct</a>
-                            <a href="#" class="item">Contact Us</a>
-                            <a href="#" class="item">Privacy</a>
+            <div class="ui center aligned container segment">
+                <div class="ui pulsed four stackable cards">
+                    <div class="card">
+                        <a class="image" href="/covid-19.html">
+                            <em data-emoji=":mask:" class="large"></em>
+                        </a>
+                        <div class="content">
+                            <div class="header">COVID-19</div>
+                            <div class="description">
+                                COVID-19 Resources and Services
+                            </div>
                         </div>
+                        <a href="/covid-19.html" class="ui bottom attached blue button">
+                            <i class="book icon"></i>
+                            Read More
+                        </a>
                     </div>
-                    <div class="three wide column">
-                        <h4 class="ui inverted header">For Organizations</h4>
-                        <div class="ui inverted link list">
-                            <a href="#" class="item">Register your Organization</a>
-                            <a href="#" class="item">Registration Guidelines</a>
+                    <div class="card">
+                        <a class="image" href="#">
+                            <em data-emoji=":medical_symbol:" class="large"></em>
+                        </a>
+                        <div class="content">
+                            <div class="header">Health and Medical</div>
+                            <div class="description">
+                                Resources and services for health
+                            </div>
                         </div>
+                        <a href="#" class="ui bottom attached blue button">
+                            <i class="book icon"></i>
+                            Read More
+                        </a>
                     </div>
-                    <div class="seven wide column">
-                        <h4 class="ui inverted header">Part of Networked.Community</h4>
-                        <p>If you would like to bring this system to your community, please <a
-                                href="https://thecure.to/Selfishness" rel="nofollow">join us</a>.</p>
-                        <p>We're happy to help!</p>
+                    <div class="card">
+                        <a class="image" href="#">
+                            <em data-emoji=":brain:" class="large"></em>
+                        </a>
+                        <div class="content">
+                            <div class="header">Mental Health</div>
+                            <div class="description">
+                                Resources and services for mental health
+                            </div>
+                        </div>
+                        <a href="#" class="ui bottom attached blue button">
+                            <i class="book icon"></i>
+                            Read More
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="image" href="#">
+                            <em data-emoji=":bread:" class="large"></em>
+                        </a>
+                        <div class="content">
+                            <div class="header">Food</div>
+                            <div class="description">
+                                Resources and services for food
+                            </div>
+                        </div>
+                        <a href="#" class="ui bottom attached blue button">
+                            <i class="book icon"></i>
+                            Read More
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="image" href="#">
+                            <em data-emoji=":roll_of_paper:" class="large"></em>
+                        </a>
+                        <div class="content">
+                            <div class="header">Necessities</div>
+                            <div class="description">
+                                Resources and services for necessities
+                            </div>
+                        </div>
+                        <a href="#" class="ui bottom attached blue button">
+                            <i class="book icon"></i>
+                            Read More
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="image" href="#">
+                            <em data-emoji=":homes:" class="large"></em>
+                        </a>
+                        <div class="content">
+                            <div class="header">Housing and Shelter</div>
+                            <div class="description">
+                                Resources and services for housing and shelter
+                            </div>
+                        </div>
+                        <a href="#" class="ui bottom attached blue button">
+                            <i class="book icon"></i>
+                            Read More
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="image" href="#">
+                            <em data-emoji=":construction_worker_tone3:" class="large"></em>
+                        </a>
+                        <div class="content">
+                            <div class="header">Income and Employment</div>
+                            <div class="description">
+                                Resources and services to help with income and employment
+                            </div>
+                        </div>
+                        <a href="#" class="ui bottom attached blue button">
+                            <i class="book icon"></i>
+                            Read More
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="image" href="#">
+                            <em data-emoji=":military_medal:" class="large"></em>
+                        </a>
+                        <div class="content">
+                            <div class="header">Service Members and Veterans</div>
+                            <div class="description">
+                                Resources and services for service members and veterans
+                            </div>
+                        </div>
+                        <a href="#" class="ui bottom attached blue button">
+                            <i class="book icon"></i>
+                            Read More
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="image" href="#">
+                            <em data-emoji=":warning:" class="large"></em>
+                        </a>
+                        <div class="content">
+                            <div class="header">Crisis and Emergency</div>
+                            <div class="description">
+                                Resources and services for crisis or emergencies
+                            </div>
+                        </div>
+                        <a href="#" class="ui bottom attached blue button">
+                            <i class="book icon"></i>
+                            Read More
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="image" href="#">
+                            <em data-emoji=":older_man:" class="large"></em>
+                        </a>
+                        <div class="content">
+                            <div class="header">Aging and Senior Services</div>
+                            <div class="description">
+                                Resources and services for seniors and those that are aging.
+                            </div>
+                        </div>
+                        <a href="#" class="ui bottom attached blue button">
+                            <i class="book icon"></i>
+                            Read More
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="image" href="#">
+                            <em data-emoji=":family_mwgb:" class="large"></em>
+                        </a>
+                        <div class="content">
+                            <div class="header">Children and Families</div>
+                            <div class="description">
+                                Resources and services for children and families
+                            </div>
+                        </div>
+                        <a href="#" class="ui bottom attached blue button">
+                            <i class="book icon"></i>
+                            Read More
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="image" href="#">
+                            <em data-emoji=":books:" class="large"></em>
+                        </a>
+                        <div class="content">
+                            <div class="header">Education</div>
+                            <div class="description">
+                                Resources and services to learn and stay educated
+                            </div>
+                        </div>
+                        <a href="#" class="ui bottom attached blue button">
+                            <i class="book icon"></i>
+                            Read More
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="image" href="#">
+                            <em data-emoji=":scales:" class="large"></em>
+                        </a>
+                        <div class="content">
+                            <div class="header">Legal Services</div>
+                            <div class="description">
+                                Resources and services for legal matters
+                            </div>
+                        </div>
+                        <a href="#" class="ui bottom attached blue button">
+                            <i class="book icon"></i>
+                            Read More
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="image" href="#">
+                            <em data-emoji=":bus:" class="large"></em>
+                        </a>
+                        <div class="content">
+                            <div class="header">Transporation</div>
+                            <div class="description">
+                                Resources and services for transportation needs
+                            </div>
+                        </div>
+                        <a href="#" class="ui bottom attached blue button">
+                            <i class="book icon"></i>
+                            Read More
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="image" href="#">
+                            <em data-emoji=":octagonal_sign:" class="large"></em>
+                        </a>
+                        <div class="content">
+                            <div class="header">Addictions</div>
+                            <div class="description">
+                                Resources and services for those struggling with addiction
+                            </div>
+                        </div>
+                        <a href="#" class="ui bottom attached blue button">
+                            <i class="book icon"></i>
+                            Read More
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="image" href="#">
+                            <em data-emoji=":wheelchair:" class="large"></em>
+                        </a>
+                        <div class="content">
+                            <div class="header">Disability Services</div>
+                            <div class="description">
+                                Resources and services for those facing a disability
+                            </div>
+                        </div>
+                        <a href="#" class="ui bottom attached blue button">
+                            <i class="book icon"></i>
+                            Read More
+                        </a>
                     </div>
                 </div>
             </div>
+            <div class="ui inverted vertical footer segment">
+                <div class="ui container">
+                    <div class="ui stackable inverted divided equal height stackable grid">
+                        <div class="three wide column">
+                            <h4 class="ui inverted header">About</h4>
+                            <div class="ui inverted link list">
+                                <a href="#" class="item">Mission</a>
+                                <a href="#" class="item">FAQ</a>
+                                <a href="#" class="item">Code of Conduct</a>
+                                <a href="#" class="item">Contact Us</a>
+                                <a href="#" class="item">Privacy</a>
+                            </div>
+                        </div>
+                        <div class="three wide column">
+                            <h4 class="ui inverted header">For Organizations</h4>
+                            <div class="ui inverted link list">
+                                <a href="#" class="item">Register your Organization</a>
+                                <a href="#" class="item">Registration Guidelines</a>
+                            </div>
+                        </div>
+                        <div class="seven wide column">
+                            <h4 class="ui inverted header">Part of Networked.Community</h4>
+                            <p>If you would like to bring this system to your community, please <a
+                                    href="https://thecure.to/Selfishness" rel="nofollow">join us</a>.</p>
+                            <p>We're happy to help!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <script src="/assets/library/components/visibility.js"></script>
-    <script src="/assets/library/components/sidebar.js"></script>
-    <script src="/assets/library/components/transition.js"></script>
-    <script src="/assets/library/components/popup.js"></script>
-    <script src="/assets/library/components/calendar.js"></script>
-    <script src="/assets/library/components/modal.js"></script>
-    <script src="/assets/library/components/dropdown.js"></script>
+        <script src="/assets/library/components/visibility.js"></script>
+        <script src="/assets/library/components/sidebar.js"></script>
+        <script src="/assets/library/components/transition.js"></script>
+        <script src="/assets/library/components/popup.js"></script>
+        <script src="/assets/library/components/calendar.js"></script>
+        <script src="/assets/library/components/modal.js"></script>
+        <script src="/assets/library/components/dropdown.js"></script>
 </body>
 
 </html>
