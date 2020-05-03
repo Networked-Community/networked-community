@@ -8,11 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <!-- Site Properties -->
-    <title>Request Help - Battle Creek, Michigan</title>
+    <title>Offer Help - Battle Creek, Michigan</title>
 
     <script src="/assets/library/jquery.min.js"></script>
     <script src="/assets/library/semantic.js"></script>
-
 
     <link rel="stylesheet" type="text/css" class="ui" href="/assets/library/css/semantic.css">
     <link rel="stylesheet" type="text/css" href="/assets/library/components/emoji.css">
@@ -21,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/library/components/popup.css">
     <link rel="stylesheet" type="text/css" href="/assets/library/components/transition.css">
     <link rel="stylesheet" type="text/css" href="/assets/library/components/checkbox.css">
+
     <link rel="stylesheet" type="text/css" href="/assets/library/css/main2.css">
 
     <script>
@@ -32,73 +32,7 @@
                     .sidebar('attach events', '.big.launch');
 
                 $('.ui.sticky')
-                    .sticky({ context: '#help-rail' });
-
-                $('.ui.calendar').calendar({
-                    type: 'datetime' });
-
-                $('#request-help-form')
-                    .form({
-                        on: 'blur',
-                        fields: {
-                            firstName: {
-                                identifier: 'first-name',
-                                rules: [
-                                    {
-                                        type: 'empty',
-                                        prompt: 'Please enter your first name'
-                                    }
-                                ]
-                            },
-                            lastName: {
-                                identifier: 'last-name',
-                                rules: [
-                                    {
-                                        type: 'empty',
-                                        prompt: 'Please enter your last name'
-                                    }
-                                ]
-                            },
-                            phoneNumber: {
-                                identifier: 'phone-number',
-                                rules: [
-                                    {
-                                        type: 'empty',
-                                        prompt: 'Please enter your phone number'
-                                    }
-                                ]
-                            },
-                            emailAddress: {
-                                identifier: 'email-address',
-                                rules: [
-                                    {
-                                        type: 'email',
-                                        prompt: 'Please provide a valid email address'
-                                    }
-                                ]
-                            },
-                            requestHelpReason: {
-                                identifier: 'help-request-reason',
-                                rules: [
-                                    {
-                                        type: 'empty',
-                                        prompt: 'Please provide the reason why you are requesting help'
-                                    }
-                                ]
-                            },
-                            agreeToBeContacted: {
-                                identifier: 'agree-to-be-contacted',
-                                rules: [
-                                    {
-                                        type: 'checkbox',
-                                        prompt: 'Please consent to being contacted'
-                                    }
-                                ]
-                            }
-                            
-                        }
-                    })
-                    ;
+                    .sticky();
             });
     </script>
 </head>
@@ -106,14 +40,13 @@
 <body class="basic minimal" ontouchstart="">
 
     <!-- Sidebar Menu -->
-    <!-- Sidebar Menu -->
     <div class="ui vertical inverted sidebar menu" id="toc">
         <a class="item active">
-            Battle Creek, Michigan <br/> Networked.Community
+            Battle Creek, Michigan <br /> Networked.Community
         </a>
         <a class="item" href="/index.html"><i class="home icon"></i> Home</a>
-        <a class="item active"><i class="warning red icon"></i> Request Help</a>
-        <a class="item" href="/offer-help.html"><i class="heart pink icon"></i> Offer Help</a>
+        <a class="item" href="/request-help.html"><i class="warning red icon"></i> Request Help</a>
+        <a class="item active"><i class="heart pink icon"></i> Offer Help</a>
         <a class="item" href="/resource-guide.html"><i class="book blue icon"></i> Resource Guide</a>
         <div class="menu">
             <a class="item" href="/covid-19.html"><em data-emoji=":mask:"></em> COVID-19</a>
@@ -147,20 +80,17 @@
 
         <div class="ui center aligned segment">
             <h1 class="ui icon header">
-                <i class="circular red warning icon"></i>
-                Request Help in Battle Creek, Michigan
+                <i class="circular pink heart icon"></i>
+                Offer Help in the Battle Creek, Michigan Area
             </h1>
 
             <h2 class="ui header">
-                There's Hope for You
+                We're all in this together. Thanks for offering your help!
             </h2>
 
-            <h3 class="ui center aligned red header">
-                IF THIS IS AN EMERGENCY CALL 911!
-            </h3>
         </div>
 
-        <div class="ui container raised segment">
+        <div class="ui container basic segment">
             <div class="ui two column stackable middle aligned grid">
                 <div class="left aligned row">
                     <div class="two wide column">
@@ -168,9 +98,9 @@
                                 src="assets/images/211mich.svg" alt="211 Michigan"
                                 class="ui tiny aligned middle left floated image" /></a>
                     </div>
-                    <div class="fourteen wide column">
+                    <div class="fourteen wide column center aligned">
                         <h3><a href="https://www.mi211.org/" target="_blank" rel="nofollow">United Way's 211</a>
-                            connects you with help of all kinds, right in your community </h3>
+                            connects you with all kinds of organizations that need help, right in your community </h3>
                     </div>
                 </div>
             </div>
@@ -183,15 +113,16 @@
                 <div class="middle aligned row">
                     <div class="column">
                         <div class="ui icon header">
-                            <i class="phone icon"></i>
+                            <em data-emoji=":telephone_receiver:" class="large icon"></em>
                             <a class="ui button primary" href="tel:211">
                                 Call 211
                             </a>
                         </div>
                         <div class="ui container">
                             <p>
-                                211 is a vital service available 24/7/365 to connect you with help of all kinds, like
-                                housing support to financial assistance.<br />
+                                If you're offering help, 211 is a vital service available 24/7/365 to connect you to the
+                                right organizations that need it, like
+                                homeless shelters and food pantries.<br />
                                 TTY: 800-250-5628
                             </p>
                         </div>
@@ -199,73 +130,60 @@
 
                     <div class="column">
                         <div class="ui icon header">
-                            <i class="mobile icon"></i>
+                            <em data-emoji=":iphone:" class="large icon"></em>
                             <a href="sms:898211" class="ui button secondary">Text 898-211</a>
                         </div>
                         <div class="ui text">
                             <p>
-                                Availability and hours vary from regional center to regional center.<br />
-                                <a href="https://www.mi211.org/about-2-1-1/text-chat" target="_blank">Check the
-                                    availability in your county on the map located here</a><br />
+                                Simply text your zipcode to 989-211, and follow the instructions.<br />
+                                <a href="https://www.mi211.org/about-2-1-1/text-chat" target="_blank">Availability and
+                                    hours vary</a> from regional center to regional center.<br />
                                 *Standard text messaging rates may apply
                             </p>
                         </div>
                     </div>
+
+
                 </div>
             </div>
         </div>
 
-        <div class="ui horizontal divider">
-            Or
-        </div>
+        <div class="ui placeholder container segment">
+            <div class="ui two column stackable center aligned grid">
+                <div class="ui vertical divider">Or</div>
+                <div class="middle aligned row">
+                    <div class="column">
+                        <div class="ui icon header">
+                            <em data-emoji=":gift_heart:" class="large icon"></em>
+                            <a class="ui button secondary" href="#">
+                                Help a Non-Profit
+                            </a>
+                        </div>
+                        <div class="ui container">
+                            <p>
+                                There are many local non-profit organizations that need your help right now.
+                            </p>
+                            <p>Check the community directory for a list of organizations</p>
+                        </div>
+                    </div>
 
-        <form class="ui form container segment" id="request-help-form">
-            <h2 class="ui header">
-                Reach out to a Battle Creek Area Volunteer
-            </h2>
-            <p>
-                Please fill out the form below to get connected with volunteers in our local area.<br />
-                The information that you enter is confidential, and will not be resold or redistributed for commercial
-                purposes.
-            </p>
-            <div class="required field">
-                <label>First Name</label>
-                <input type="text" name="first-name" placeholder="First Name">
-            </div>
-            <div class="required field">
-                <label>Last Name</label>
-                <input type="text" name="last-name" placeholder="Last Name">
-            </div>
-            <div class="required field">
-                <label>Phone Number</label>
-                <input type="text" name="phone-number" placeholder="Phone Number">
-            </div>
-            <div class="required field">
-                <label>Email Address</label>
-                <input type="text" name="email-address" placeholder="Email Address">
-            </div>
-            <div class="required field">
-                <label>What do you need help with?</label>
-                <textarea name="help-request-reason" placeholder="I need someone to help me with..."></textarea>
-            </div>
-            <div class="field">
-                <label>Is there a specific day/time for your request?</label>
-                <div class="ui calendar">
-                  <div class="ui input left icon">
-                    <i class="calendar icon"></i>
-                    <input type="text" name="help-request-date" placeholder="Day and Time of Request" name="date">
-                  </div>        
+                    <div class="column">
+                        <div class="ui icon header">
+                            <em data-emoji=":dove:" class="large icon"></em>
+                            <a href="#" class="ui button primary">Volunteer for Networked.Community</a>
+                        </div>
+                        <div class="ui text">
+                            <p>
+                                Join us if you want to help people in Battle Creek, contribute to this site, expand this
+                                to your area, or volunteer in other ways for Networked.Community.
+                            </p>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-            
-            <div class="required field">
-                <div class="ui checkbox" data-children-count="1">
-                    <input type="checkbox" name="agree-to-be-contacted">
-                    <label>I agree to be contacted by a Networked.Community Volunteer</label>
-                </div>
-            </div>
-            <button class="ui button" type="submit">Submit</button>
-        </form>
+        </div>
 
         <div class="ui inverted vertical footer segment">
             <div class="ui container">
