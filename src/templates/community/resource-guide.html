@@ -21,6 +21,8 @@
     <link rel="stylesheet" type="text/css" href="/assets/library/components/popup.css">
     <link rel="stylesheet" type="text/css" href="/assets/library/components/transition.css">
     <link rel="stylesheet" type="text/css" href="/assets/library/components/checkbox.css">
+    <link rel="stylesheet" type="text/css" href="/assets/library/components/modal.css">
+    <link rel="stylesheet" type="text/css" href="/assets/library/components/dropdown.css">
     <link rel="stylesheet" type="text/css" href="/assets/library/css/main2.css">
 
     <script>
@@ -30,7 +32,13 @@
                 // create sidebar and attach to menu open
                 $('.ui.sidebar')
                     .sidebar('attach events', '.big.launch');
-
+                
+                $('.jiggle.cards .card')
+                    .transition({
+                        animation : 'pulse',
+                        duration  : 800,
+                        interval  : 200
+                    });
             });
     </script>
 </head>
@@ -65,7 +73,7 @@
 
         </div>
         <div class="ui center aligned container segment">
-            <div class="ui four stackable cards">
+            <div class="ui jiggle four stackable cards">
                 <div class="card">
                     <a class="image" href="/covid-19.html">
                         <em data-emoji=":mask:" class="large"></em>
@@ -344,6 +352,8 @@
     <script src="/assets/library/components/transition.js"></script>
     <script src="/assets/library/components/popup.js"></script>
     <script src="/assets/library/components/calendar.js"></script>
+    <script src="/assets/library/components/modal.js"></script>
+    <script src="/assets/library/components/dropdown.js"></script>
 </body>
 
 </html>
